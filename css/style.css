@@ -1,0 +1,137 @@
+body{
+    line-height:1.5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header, nav{
+    /* margin: 20px 10px; */
+    padding:8px;
+    margin-bottom:8px;
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display:inline-block;
+    margin-right:16px;
+    font-size:1.1rem;
+    background-color:rgb(241, 241, 241);
+    padding:24px;
+    border-radius: 4px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+
+}
+
+nav a.current{
+    text-decoration: rgb(0, 91, 122) underline wavy;
+    text-transform: uppercase;
+    text-underline-offset: 4px;
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-size: 3em;
+   font-weight: bold;
+
+
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+h3{
+    /*Set font size*/
+    font-size: 1.5em;
+
+
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin:14px 0;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    grid-gap:10px;
+    margin:0 auto;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border:1px solid black;
+    padding:24px 16px 24px 16px;
+    border:1px solid black;
+    border-radius:8px;
+    background-color: rgb(246, 251, 255);
+}
+
+
+.grid img{
+    /* Set width, margin, and display */
+    width:100%;
+    border:1px solid black;
+    height:250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 8px black 0.1;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+
+p{
+     margin-bottom:8px;
+     font-weight:lighter;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
+
+
+@media (min-width:900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid img{
+        height:400px;
+    }
+}
